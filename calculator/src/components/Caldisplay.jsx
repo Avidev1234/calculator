@@ -1,10 +1,10 @@
-import styles from './Display.module.css'
+import styles from './Display.module.css';
 import PropTypes from 'prop-types';
-export default function Caldisplay({handleChange}) {
+export default function Caldisplay({calculators}) {
   return (
-    <input className={styles.display} type="text" value={handleChange} readOnly />
+    <input className={styles.display} type="text" value={calculators} readOnly  />
   )
 }
 Caldisplay.propTypes = {
-  handleChange: PropTypes.string
+  calculators: PropTypes.string
 };
